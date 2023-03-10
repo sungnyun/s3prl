@@ -17,9 +17,9 @@ optimizer:
 
 # comment the whole scheduler config block
 # to disable learning rate scheduling
-# scheduler:
-#   name: linear_schedule_with_warmup
-#   num_warmup_steps: 1400
+scheduler:
+  name: linear_schedule_with_warmup
+  num_warmup_steps: 1400
 
 # comment the whole specaug config block
 # to disable specaug on representation
@@ -36,7 +36,7 @@ optimizer:
 downstream_expert:
   corpus:                                 
     name: 'libriphone'                   # Specify corpus
-    path: '/home/leo/d/datasets/LibriSpeech'          # Path to raw LibriSpeech dataset
+    path: '../db/LibriSpeech'          # Path to raw LibriSpeech dataset
     lexicon:
       # - downstream/ctc/lexicon/librispeech-lexicon.txt
       - downstream/ctc/lexicon/librispeech-lexicon-200k-g2p.txt

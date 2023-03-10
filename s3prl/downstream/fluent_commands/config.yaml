@@ -18,13 +18,13 @@ optimizer:
 
 # comment the whole scheduler config block
 # to disable learning rate scheduling
-# scheduler:
-#   name: linear_schedule_with_warmup
-#   num_warmup_steps: 1000
+scheduler:
+  name: linear_schedule_with_warmup
+  num_warmup_steps: 1000
 
 downstream_expert:
   datarc:
-    file_path: /groups/public/benchmark/fluent_speech_commands_dataset
+    file_path: ../db/fluent_speech_commands_dataset
     num_workers: 12
     train_batch_size: 32
     eval_batch_size: 32
