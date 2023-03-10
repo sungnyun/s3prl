@@ -34,6 +34,13 @@ from s3prl.upstream.wav2vec2.hubconf import *
 from s3prl.upstream.wav2vec.hubconf import *
 from s3prl.upstream.wavlm.hubconf import *
 
+from s3prl.upstream.fithubert.hubconf import *
+from s3prl.upstream.gradhubert.hubconf import *
+from s3prl.upstream.gradruhubert.hubconf import *
+from s3prl.upstream.maskhubert.hubconf import *
+from s3prl.upstream.maskrhubert.hubconf import *
+from s3prl.upstream.armhubert.hubconf import *
+
 
 def options(only_registered_ckpt: bool = False):
     all_options = []
